@@ -11,8 +11,30 @@ public class Lab2Ex3 {
         System.out.print("Enter an integer from 1 to 15: ");
         int number = input.nextInt();
 
-        if (number % 2 == 1) {
-            
+        for(int i = 1; i <= number; i++) {
+            for(int j = number; j >= 1; j--) {
+                if (j <= i) {
+                    if (j < 10) {
+                        System.out.print(j + "  ");
+                    } else {
+                        System.out.print(j + " ");
+                    }
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            for(int j = 2; j <= number; j++) {
+                if (j <= i) {
+                    if (j < 10) {
+                        System.out.print(j + "  ");
+                    } else {
+                        System.out.print(j + " ");
+                    }
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
         }
     }
 }
