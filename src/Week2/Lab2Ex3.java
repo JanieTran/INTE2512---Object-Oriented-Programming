@@ -36,5 +36,16 @@ public class Lab2Ex3 {
             }
             System.out.println();
         }
+
+//        // ALTERNATIVE SOLUTION
+//        for(int i = 1; i <= number; i++) {
+//            for(int j = 1; i <= number - i; i++) {
+//                System.out.printf("%3s", " ");
+//            }
+//            for(int j = number; j >= 1; j--) {
+//                System.out.printf("%3s", j);
+//            }
+//        }
+
     }
 }
