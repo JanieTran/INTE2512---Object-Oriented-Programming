@@ -39,6 +39,8 @@ public class Lab3Ex3 {
 
             System.out.print("Do you want to continue? (Y/N) ");
             str = input.nextLine();
+
+            palin = true;
         }
     }
 }

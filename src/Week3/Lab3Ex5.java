@@ -12,7 +12,7 @@ public class Lab3Ex5 {
         Scanner input = new Scanner(System.in);
 
         final String ALP = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        final String CYP = "QTGABCDEFHIJKLMNOPRSUVXYZ";
+        final String CYP = "QTGABCDEFHIJKLMNOPRSUVXYZW";
 
         char[] alpArr = ALP.toLowerCase().toCharArray();
         char[] cypArr = CYP.toLowerCase().toCharArray();
@@ -26,12 +26,15 @@ public class Lab3Ex5 {
 
         for (char a : textArr) {
             boolean isChar = false;
+
             for (int i = 0; i < alpArr.length; i++) {
                 if ((int)a == (int)alpArr[i]) {
                     code += cypArr[i];
                     isChar = true;
+                    break;
                 }
             }
+
             if (!isChar) {
                 code += a;
             }
