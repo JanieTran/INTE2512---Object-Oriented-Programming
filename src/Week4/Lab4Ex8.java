@@ -1,7 +1,6 @@
 package Week4;
 
 import Week4.Measures.Length;
-import Week4.Measures.Weight;
 
 public class Lab4Ex8 {
     public static void main(String[] args) {
